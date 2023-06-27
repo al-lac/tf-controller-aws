@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraform Controller - QR Code</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            width: 80%;
+            /* Adjust this to make the image larger or smaller */
+            height: auto;
+            max-width: 600px;
+            /* Maximum width of the image */
+        }
+
+        @media only screen and (min-width: 768px) {
+            img {
+                width: 600px;
+                /* Fixed width on larger screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Link to Terraform GitOps Repository - Deployed by Flux Terraform Controller</h1>
+    <img src="github-aws.png" alt="Github AWS QR Code">
+</body>
+
+</html>
