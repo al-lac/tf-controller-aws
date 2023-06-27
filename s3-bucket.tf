@@ -52,6 +52,6 @@ resource "aws_s3_object" "qr_test" {
 
   bucket = aws_s3_bucket.alex.id
   key    = "github-aws-test.png"
-  source = "./github-aws.png"
+  source = "./content/github-aws.png"
   acl    = "public-read"
 }
