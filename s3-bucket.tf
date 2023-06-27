@@ -55,3 +55,25 @@ resource "aws_s3_object" "qr_test" {
   source = "./content/github-aws.png"
   acl    = "public-read"
 }
+
+resource "aws_s3_object" "index" {
+  depends_on = [
+    aws_s3_bucket_acl.alex,
+  ]
+
+  bucket = aws_s3_bucket.alex.id
+  key    = "index.html"
+  source = "./content/index.html"
+  acl    = "public-read"
+}
+
+resource "aws_s3_object" "error" {
+  depends_on = [
+    aws_s3_bucket_acl.alex,
+  ]
+
+  bucket = aws_s3_bucket.alex.id
+  key    = "index.html"
+  source = "./content/error.html"
+  acl    = "public-read"
+}
